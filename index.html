@@ -6,7 +6,7 @@
   <title>沈凜香｜個人履歷</title>
   <style>
     :root{
-      --accent:#ff7c7c;   /* 主色：溫暖粉紅，可自行改 */
+      --accent:#ff7c7c;
       --muted:#6b7280;
       --bg:#fffaf9;
       --card:#ffffff;
@@ -14,7 +14,7 @@
       --max-w:880px;
       --font-family: -apple-system,"Segoe UI",Roboto,"Noto Sans TC","Helvetica Neue",Arial;
     }
-    *{box-sizing:border-box}
+    *{box-sizing:border-box;}
     body{
       margin:0;
       font-family:var(--font-family);
@@ -39,44 +39,71 @@
     @media(max-width:768px){.resume{grid-template-columns:1fr}}
     .profile{text-align:center}
     .photo{
-      width:160px;height:160px;margin:0 auto 12px;
-      background:var(--accent);
+      width:160px;
+      height:160px;
+      margin:0 auto 12px;
       border-radius:50%;
-      display:flex;align-items:center;justify-content:center;
-      color:white;font-size:48px;font-weight:700;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--accent);
+      color:white;
+      font-size:48px;
+      font-weight:700;
+    }
+    .photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
     h1{margin:8px 0;font-size:22px}
     .muted{color:var(--muted)}
     section{margin-bottom:20px}
     h2{font-size:18px;margin-bottom:8px;color:var(--accent)}
-    ul{margin:0;padding-left:20px}
-    .tag{display:inline-block;background:#ffe5e5;padding:6px 10px;border-radius:20px;margin:4px;font-size:14px}
-    .card{background:#fff5f5;padding:14px;border-radius:10px;margin-bottom:10px}
+    ul{margin:0;padding-left:20px;}
+    .tag{
+      display:inline-block;
+      background:#ffe5e5;
+      padding:6px 10px;
+      border-radius:20px;
+      margin:4px;
+      font-size:14px;
+    }
+    .card{
+      background:#fff5f5;
+      padding:14px;
+      border-radius:10px;
+      margin-bottom:10px;
+    }
   </style>
 </head>
 <body>
-  
-<header>
-    <div class="photo">
-      <img src="me.jpg" alt="me.jpg">
-    </div>
-      <h1>沈凜香</h1>
-      <p class="muted">台北市</p>
+  <div class="resume">
+    <!-- 左側 -->
+    <aside>
+      <div class="profile">
+        <div class="photo">
+          <img src="me.jpg" alt="沈凜香照片">
+        </div>
+        <h1>沈凜香</h1>
+        <p class="muted">台北市</p>
 
-      <section>
-        <h2>興趣</h2>
-        <div class="tag">針織 🧶</div>
-        <div class="tag">烘焙 🍪</div>
-        <div class="tag">玩桌遊 🎲</div>
-      </section>
+        <section>
+          <h2>興趣</h2>
+          <div class="tag">針織 🧶</div>
+          <div class="tag">烘焙 🍪</div>
+          <div class="tag">玩桌遊 🎲</div>
+        </section>
 
-      <section>
-        <h2>喜歡的事物</h2>
-        <div class="card">🐶 小狗（特別是臘腸狗）</div>
-        <div class="card">🍣 壽司（超級愛吃！）</div>
-        <div class="card">📦 文創小物：OBUNGU</div>
-        <div class="card">📺 卡通：麵包超人</div>
-      </section>
+        <section>
+          <h2>喜歡的事物</h2>
+          <div class="card">🐶 小狗（特別是臘腸狗）</div>
+          <div class="card">🍣 壽司（超級愛吃！）</div>
+          <div class="card">📦 文創小物：OBUNGU</div>
+          <div class="card">📺 卡通：麵包超人</div>
+        </section>
+      </div>
     </aside>
 
     <!-- 右側 -->
@@ -103,9 +130,7 @@
     </main>
   </div>
 </body>
-
 </html>
-
 
 
 
