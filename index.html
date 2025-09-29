@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>沈凜香｜個人履歷</title>
+  <style>
+    :root{
+      --accent:#ff7c7c;   /* 主色：溫暖粉紅，可自行改 */
+      --muted:#6b7280;
+      --bg:#fffaf9;
+      --card:#ffffff;
+      --radius:12px;
+      --max-w:880px;
+      --font-family: -apple-system,"Segoe UI",Roboto,"Noto Sans TC","Helvetica Neue",Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font-family);
+      background:var(--bg);
+      color:#111827;
+      line-height:1.5;
+      display:flex;
+      justify-content:center;
+      padding:24px;
+    }
+    .resume{
+      width:100%;
+      max-width:var(--max-w);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(0,0,0,0.08);
+      display:grid;
+      grid-template-columns:280px 1fr;
+      gap:24px;
+      padding:24px;
+    }
+    @media(max-width:768px){.resume{grid-template-columns:1fr}}
+    .profile{text-align:center}
+    .photo{
+      width:160px;height:160px;margin:0 auto 12px;
+      background:var(--accent);
+      border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-size:48px;font-weight:700;
+    }
+    h1{margin:8px 0;font-size:22px}
+    .muted{color:var(--muted)}
+    section{margin-bottom:20px}
+    h2{font-size:18px;margin-bottom:8px;color:var(--accent)}
+    ul{margin:0;padding-left:20px}
+    .tag{display:inline-block;background:#ffe5e5;padding:6px 10px;border-radius:20px;margin:4px;font-size:14px}
+    .card{background:#fff5f5;padding:14px;border-radius:10px;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- 左側 -->
+    <aside class="profile">
+      <div class="photo">沈</div>
+      <h1>沈凜香</h1>
+      <p class="muted">台北市</p>
+
+      <section>
+        <h2>興趣</h2>
+        <div class="tag">針織 🧶</div>
+        <div class="tag">烘焙 🍪</div>
+        <div class="tag">玩桌遊 🎲</div>
+      </section>
+
+      <section>
+        <h2>喜歡的事物</h2>
+        <div class="card">🐶 小狗（特別是臘腸狗）</div>
+        <div class="card">🍣 壽司（超級愛吃！）</div>
+        <div class="card">📦 文創小物：OBUNGU</div>
+        <div class="card">📺 卡通：麵包超人</div>
+      </section>
+    </aside>
+
+    <!-- 右側 -->
+    <main>
+      <section>
+        <h2>關於我</h2>
+        <p>嗨！我是 <strong>沈凜香</strong>，一個充滿好奇心的人。我的 MBTI 是 <strong>ENFJ</strong>，雖然現在很外向，但其實我以前非常內向，上台報告時甚至會一句話也講不出來。隨著年齡的成長，我慢慢喜歡表達自己的想法，也變得更敢與人互動。</p>
+      </section>
+
+      <section>
+        <h2>性格特質</h2>
+        <ul>
+          <li>對不熟的人有點內向，但對熟人會很瘋。</li>
+          <li>共情能力很強，看到別人流淚自己也會被感染。</li>
+          <li>擅長帶領團隊，是天生的領導者。</li>
+          <li>方向感很好，對地圖有特別的掌握能力。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>我喜歡的事</h2>
+        <p>我喜歡透過 <strong>針織</strong> 與 <strong>烘焙</strong> 創造療癒小物和甜點，也愛和朋友們一起 <strong>玩桌遊</strong>。在生活中，臘腸狗和壽司都是讓我特別開心的存在 💕。</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
